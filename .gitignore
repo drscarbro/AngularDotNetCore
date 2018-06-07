@@ -2,3 +2,9 @@
 .vscode
 obj
 bin
+DatingApp.db
+bin/Debug/netcoreapp2.0/DatingApp.API.dll
+bin/Debug/netcoreapp2.0/DatingApp.API.pdb
+obj/Debug/netcoreapp2.0/DatingApp.API.dll
+obj/Debug/netcoreapp2.0/DatingApp.API.pdb
+obj/Debug/netcoreapp2.0/DatingApp.API.csproj.CoreCompileInputs.cache
