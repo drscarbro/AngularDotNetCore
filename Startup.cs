@@ -30,8 +30,7 @@ namespace DatingApp.API
         {
             var key = Encoding.ASCII.GetBytes(Configuration.GetSection("AppSettings:Token").Value);
             services.AddDbContext<DataContext>(db => db.UseSqlite(Configuration
-                .GetConnectionString("DefaultConnection")));   
-            services.AddMvc();
+                .GetConnectionString("DefaultConnection")));
             services.AddCors();
             services.AddScoped<IAuthRepository, AuthRepository>();
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -43,7 +42,8 @@ namespace DatingApp.API
                         ValidateIssuer = false,
                         ValidateAudience = false
                     };
-                });
+                });   
+            services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
